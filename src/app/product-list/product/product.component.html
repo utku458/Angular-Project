@@ -1,0 +1,27 @@
+
+
+<div  class="card mb-3 p-1" *ngIf="product else noProducts">
+    <div class="row">
+      <div class="col-3">
+        <img
+          class="img-fluid rounded-start"
+          src="images/{{ product?.imageUrl }}"
+          alt="image"
+        />
+      </div>
+      <div class="col-9">
+        <div class="card-body">
+          <h5 class="card-title"> ss{{ product?.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+
+          <a [routerLink]="['/products/{{product.id}}']" routerLinkActive="router-link-active" class="btn btn-primary">Urun Detay</a>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noProducts>
+    <div class="alert alert-warning">np products</div>
+  </ng-template>
+  
