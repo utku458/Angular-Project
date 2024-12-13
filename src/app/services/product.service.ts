@@ -8,7 +8,7 @@ import { AuthService } from "./auth.service";
 export class ProductService{
 
 
-    private url = 'https://ng-shopapp-212ae-default-rtdb.firebaseio.com/'
+    private url = 'firebaseurl'
    
 
     constructor(private http:HttpClient,private authService:AuthService){
