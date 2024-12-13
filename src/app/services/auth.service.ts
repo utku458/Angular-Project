@@ -12,7 +12,7 @@ import { User } from '../models/user';
 export class AuthService {
 
   localStorage : Storage
-  api_key  = "AIzaSyDPmtTWENpP57iDhHoFS6izSmK6I6MjCfM ";
+  api_key  = "Api key";
   user = new BehaviorSubject<User|null>(null);
   
   constructor(private http:HttpClient) { }
