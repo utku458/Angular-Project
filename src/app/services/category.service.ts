@@ -5,7 +5,7 @@ import { Category } from '../models/category';
 
 @Injectable()
 export class CategoryService {
- private url = 'https://ng-shopapp-212ae-default-rtdb.firebaseio.com/';
+ private url = 'url';
 
 
   constructor(private http:HttpClient) 
